@@ -29,7 +29,7 @@ HYPERLEDGER_SECURITY_SECRETS=(
     "9LKqKH5peurL"
 )
 
-HYPERLEDGER_GOPATH="/urs/lib/golang"
+HYPERLEDGER_GOPATH="/usr/lib/golang"
 HYPERLEDGER_EXEPATH="$HYPERLEDGER_GOPATH/src/github.com/hyperledger/fabric"
 HYPERLEDGER_FSPATH="/var/hyperledger/production"
 HYPERLEDGER_LOGPATH="/var/log"
