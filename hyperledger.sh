@@ -52,7 +52,7 @@ HYPERLEDGER_PEER_ARGUMENTS="node start"
 HYPERLEDGER_PEER_LOGFILE="$HYPERLEDGER_LOGPATH/peer.log"
 HYPERLEDGER_PEER_PRODDB="$HYPERLEDGER_FSPATH/*"
 
-DOCKER_DAEMON_CMD="docker daemon -s devicemapper -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock >/var/log/docker.log 2>&1 &"
+DOCKER_DAEMON_CMD="docker daemon -s devicemapper -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock >/var/log/docker.log 2>&1 &"
 
 # One of start, stop, and status is mandatory. The rest are optional and
 # can come in any order.
