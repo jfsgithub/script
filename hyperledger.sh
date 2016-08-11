@@ -3,10 +3,10 @@
 # Host names and IDs (note these are NOT security IDs) for validators.
 
 HYPERLEDGER_VALIDATOR_HOSTS=(
-	"root@10.0.45.134"
-	"root@10.0.45.135"
-	"root@10.0.45.136"
-	"root@10.0.45.137"
+	"appadmin@10.0.45.134"
+	"appadmin@10.0.45.135"
+	"appadmin@10.0.45.136"
+	"appadmin@10.0.45.137"
 )
 HYPERLEDGER_VALIDATOR_IDS=(
     "vp0"
