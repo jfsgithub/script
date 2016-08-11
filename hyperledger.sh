@@ -3,10 +3,10 @@
 # Host names and IDs (note these are NOT security IDs) for validators.
 
 HYPERLEDGER_VALIDATOR_HOSTS=(
-	"root@192.168.42.53"
-	"root@192.168.42.54"
-	"root@192.168.42.55"
-	"root@192.168.42.56"
+	"root@10.0.45.134"
+	"root@10.0.45.135"
+	"root@10.0.45.136"
+	"root@10.0.45.137"
 )
 HYPERLEDGER_VALIDATOR_IDS=(
     "vp0"
@@ -29,13 +29,13 @@ HYPERLEDGER_SECURITY_SECRETS=(
     "9LKqKH5peurL"
 )
 
-HYPERLEDGER_GOPATH="/opt/openchain"
+HYPERLEDGER_GOPATH="/home/appadmin/golang"
 HYPERLEDGER_EXEPATH="$HYPERLEDGER_GOPATH/src/github.com/hyperledger/fabric"
 HYPERLEDGER_FSPATH="/var/hyperledger/production"
 HYPERLEDGER_LOGPATH="/var/log"
 
 # Settings for OBC CA server when security is enabled.
-HYPERLEDGER_CA_HOST="192.168.42.53"
+HYPERLEDGER_CA_HOST="10.0.45.134"
 HYPERLEDGER_CA_PORT="50051"
 HYPERLEDGER_CA_PATH="$HYPERLEDGER_EXEPATH/membersrvc"
 HYPERLEDGER_CA_BINARY="membersrvc"
@@ -44,7 +44,7 @@ HYPERLEDGER_CA_LOGFILE="$HYPERLEDGER_LOGPATH/membersrvc.log"
 HYPERLEDGER_CA_PRODDB="$HYPERLEDGER_FSPATH/.membersrvc/*"
 
 # Settings for OBC validator (aka peer).
-HYPERLEDGER_PEER_ROOT="192.168.42.53"
+HYPERLEDGER_PEER_ROOT="10.0.45.134"
 HYPERLEDGER_PEER_PORT="30303"
 HYPERLEDGER_PEER_PATH="$HYPERLEDGER_EXEPATH/peer"
 HYPERLEDGER_PEER_BINARY="peer"
@@ -90,7 +90,7 @@ action=$1
 shift
 
 hyperledger_nhosts=${#HYPERLEDGER_VALIDATOR_HOSTS[@]}
-hyperledger_consensus="noops"
+hyperledger_consensus="pbft"
 hyperledger_loglevel="info"
 
 # Process all the optional arguments.
